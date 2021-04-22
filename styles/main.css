@@ -1,5 +1,5 @@
 body {
-    background: #eee2dc;
+    background: #3aafa9;
     font-family: 'Orelega One', cursive;    
     margin: 0px;
 }
@@ -8,19 +8,10 @@ header {
     display: flex;
     position: fixed;
     width: 100%;
-    background: #d6470a;
+    background: #17252a;
     padding: 5px;
     height: 40px;
 
-}
-
-/* Header links */
-header a {
-    text-decoration: none;
-}
-
-header a:hover {
-    text-decoration: underline;
 }
 
 .logo {
@@ -59,31 +50,47 @@ nav li {
     padding: 20px 25%;
     text-align: center;
     font-size: 20px;
+    color: #17252a
 }
 
 
 h1 {
     font-size: 60px;
-    color: #ac3b61;
+    color: #2b7a78;
     margin-bottom: -20px;
 }
 
 h2 {
     font-size: 30px;
-    color: #e04d7ee0;
+    color: #2b7a78;
     padding-bottom: 20px;
 }
 
-a {
+nav ul li a, header a {
+    color:#3aafa9;
+    text-decoration: none;
+}
+
+nav ul li a:hover, header a:hover {
+    color:#def2f1;
+    text-decoration: none;
+}
+
+nav ul li a:visited, header a:visited {
+    color: none;
+    text-decoration: none;
+}
+
+#main-body a {
     color: #123c69;
     text-decoration: none;
 }
 
-a:hover {
+#main-body a:hover {
     text-decoration: underline;
 }
 
-a:visited {
+#main-body a:visited {
     color: #123c69
 }
 
@@ -101,7 +108,9 @@ h3 {
     text-align: left;
     margin-bottom: -10px;
     padding-top: 10px;
-    color: #e04d7ee0;
+    color: #2b7a78;
 
 }
+
+
 
