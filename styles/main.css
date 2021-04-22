@@ -56,7 +56,7 @@ nav li {
   }
 
 #main-body {
-    padding: 20px 300px;
+    padding: 20px 25%;
     text-align: center;
     font-size: 20px;
 }
@@ -65,6 +65,13 @@ nav li {
 h1 {
     font-size: 60px;
     color: #ac3b61;
+    margin-bottom: -20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #e04d7ee0;
+    padding-bottom: 20px;
 }
 
 a {
@@ -84,5 +91,17 @@ footer {
     /* display: flex; */
     text-align: center;
     margin-bottom: -50px;
+}
+
+p {
+    text-align:justify
+}
+
+h3 {
+    text-align: left;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    color: #e04d7ee0;
+
 }
 
