@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Core post: Learning Plan</title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">  
+  </head>
+  
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <p><a href="/">/Kris</a></p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../pages/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main section -->
+    <section id="main-body">
+      <br>
+
+      <h1>Learning Plan</h1>
+      <!-- <img src="images/web-developer.jpg" alt="Web developer at work" width="500" height="auto"> -->
+      <h2>I'm going to tell you all about the 5 ways to position elements with CSS.</h2>
+      <h5>22nd April 2021 | Sprint 2</h5>
+
+      <!-- Post content -->
+      <div>
+        <img src="../images/css-positioning.png" alt="CSS Positioning">
+        <h3>Static</h3>
+        <p>This is the default position, unless stated HTML will assign this positioning to the element. 
+          It follows the document flow of the HTML code. So the first element in the code will come first, 
+          then the second etc.
+        </p>
+        
+        <h3>Relative</h3>
+        <p>Similar to static in that if follows the document flow, however top, right, bottom and left (TRBL) 
+          properties are made available to move the element relative to its original position. The element’s 
+          original position is anchored into the document flow but the element is technically removed from the 
+          flow and therefore doesn’t impact the position of any surrounding elements. For this reason TRBL properties 
+          are not commonly used with relative positioning as it may mean that other elements need to be moved to 
+          avoid overlap - this can get messy. 
+        </p>
+
+        <h3>Absolute</h3>
+        <p>Absolute positioning also has TRBL properties available to move the element - and it is recommended to use 
+          these properties with this positioning style. Where relative positioning moves relative to itself, absolute 
+          moves relative to its parent element. The parent element has to have a positioning value other than static 
+          for it to work otherwise it will become relative to the html element.
+        </p>
+
+        <h3>Fixed</h3>
+        <p>Similar to absolute positioning however it will always move relative to the html element i.e. the entire 
+          page. As a result it is not affected by scrolling. It will stay in the same position on the screen - like my nav bar ;-)
+        </p>
+
+
+        <h3>Sticky</h3>
+        <p>This one is a newer addition to CSS properties (consider it a love child of relative and fixed), it's 
+          only compatible with about 90% of browsers which makes it sound newer than the others - <b>so use with caution!</b> 
+          It allows elements to behave dynamically when scrolling the page. In essence this style is initially relative but 
+          as you scroll it will become fixed when it reaches a TRBL value.
+        </p>
+
+        <p>Thanks for reading :-)</p>
+
+        
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <a href="https://devacademy.co.nz/">
+          <img src="../images/eda-logo.png" alt="EDA website" width="50" height="50">
+        </a>
+        <a href="https://github.com/krjw-00">
+          <img src="../images/github-logo.png" alt="GitHub profile" width="50" height="50">
+        </a>
+        <a href="https://www.linkedin.com/in/krisjwood/">
+          <img src="../images/linkedin-logo.png" alt="LinkedIn profile" width="50" height="50">
+        </a>
+      </div>
+      
+      <div>&#169 2021 Kris. All rights reserved</div>
+    </footer>
+    
+  </body>
+</html>
