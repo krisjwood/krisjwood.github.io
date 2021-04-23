@@ -28,10 +28,12 @@
 
       <h1>CSS positioning</h1>
       <!-- <img src="images/web-developer.jpg" alt="Web developer at work" width="500" height="auto"> -->
-      <h2>I'm going to tell you all about the 5 ways to position elements in CSS.</h2>
+      <h2>I'm going to tell you all about the 5 ways to position elements with CSS.</h2>
+      <h5>22nd April 2021</h5>
 
       <!-- Post content -->
       <div>
+        <img src="../images/css-positioning.png" alt="CSS Positioning">
         <h3>Static</h3>
         <p>This is the default position, unless stated HTML will assign this positioning to the element. 
           It follows the document flow of the HTML code. So the first element in the code will come first, 
@@ -44,7 +46,7 @@
           original position is anchored into the document flow but the element is technically removed from the 
           flow and therefore doesn’t impact the position of any surrounding elements. For this reason TRBL properties 
           are not commonly used with relative positioning as it may mean that other elements need to be moved to 
-          avoid overlap. 
+          avoid overlap - this can get messy. 
         </p>
 
         <h3>Absolute</h3>
@@ -56,18 +58,18 @@
 
         <h3>Fixed</h3>
         <p>Similar to absolute positioning however it will always move relative to the html element i.e. the entire 
-          page. As a result it is not affected by scrolling. It will stay in the same position on the screen.
+          page. As a result it is not affected by scrolling. It will stay in the same position on the screen - like my nav bar ;-)
         </p>
 
 
         <h3>Sticky</h3>
-        <p>This one feels like a newer addition to CSS properties as its a love child of relative and fixed. It’s also 
-          only compatible with about 90% of browsers which makes it sound newer than the others - use with caution! It 
-          allows elements to behave dynamically when scrolling a page. 
-          <br>
-          The feature of this positioning style is that initially it is relative but when you scroll it will become 
-          fixed when it reaches a TRBL value.
+        <p>This one is a newer addition to CSS properties (consider it a love child of relative and fixed), it's 
+          only compatible with about 90% of browsers which makes it sound newer than the others - <b>so use with caution!</b> 
+          It allows elements to behave dynamically when scrolling the page. In essence this style is initially relative but 
+          as you scroll it will become fixed when it reaches a TRBL value.
         </p>
+
+        <p>Thanks for reading :-)</p>
 
         
       </div>

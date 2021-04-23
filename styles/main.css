@@ -112,5 +112,12 @@ h3 {
 
 }
 
+h5 {
+    text-align: left;
+    font-style: italic;
+}
 
-
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #2b7a78;
+}
