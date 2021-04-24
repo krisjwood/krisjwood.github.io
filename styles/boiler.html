@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kris' Blog</title>
+    <meta charset="UTF-8">
+    <link href="/styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet"> 
+    <link href="/static/favicon.ico" rel="icon">
+
+    {% block head %} {% endblock %}
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+          <p><a href="/">/Kris</a></p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      {% block body %} {% endblock %}
+
+<!-- Footer -->
+  <footer>
+    <div>
+      <a href="https://devacademy.co.nz/">
+        <img class="footer-image-size" src="images/eda-logo.png" alt="EDA website">
+      </a>
+      <a href="https://github.com/krjw-00">
+        <img class="footer-image-size" src="images/github-logo.png" alt="GitHub profile">
+      </a>
+      <a href="https://www.linkedin.com/in/krisjwood/">
+        <img class="footer-image-size" src="images/linkedin-logo.png" alt="LinkedIn profile">
+      </a>
+    </div>
+    
+    <div>&#169 2021 Kris. All rights reserved</div>
+  </footer>
+  
+</body>
+</html>
