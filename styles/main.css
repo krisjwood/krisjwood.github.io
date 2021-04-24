@@ -121,3 +121,18 @@ h5 {
 hr.solid {
     border-top: 3px solid #2b7a78;
 }
+
+.img-text-wrap {
+    float: left;
+    margin: 10px;
+}
+
+.footer-image-size {
+    width: 50px;
+    height: 50px;
+}
+
+.hp-image-size {
+    width: 500px; 
+    height: auto;
+}
