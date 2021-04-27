@@ -125,6 +125,8 @@ hr.solid {
 .img-text-wrap {
     float:inline-end;
     margin: 10px;
+    width: 300; 
+    height: auto;
 }
 
 .footer-image-size {
