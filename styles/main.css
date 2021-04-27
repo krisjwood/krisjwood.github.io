@@ -123,7 +123,7 @@ hr.solid {
 }
 
 .img-text-wrap {
-    float: left;
+    float:inline-end;
     margin: 10px;
 }
 
@@ -135,4 +135,10 @@ hr.solid {
 .hp-image-size {
     width: 500px; 
     height: auto;
+}
+
+.bullet-align {
+    text-align: left;
+    position: relative;
+    left: 20px;
 }
