@@ -144,3 +144,15 @@ hr.solid {
     position: relative;
     left: 20px;
 }
+
+
+pre code {
+    text-align: left;
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    white-space:pre-wrap;
+    font-size: smaller;
+
+  }
