@@ -53,6 +53,16 @@ nav li {
     color: #17252a
 }
 
+footer a {
+    text-decoration: none;
+  
+}
+#copyright {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
 
 h1 {
     font-size: 60px;
