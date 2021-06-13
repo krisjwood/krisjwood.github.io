@@ -1,7 +1,12 @@
+/* desktop: 1200px +
+tablet: 768px
+mobile: 320px */
+
 body {
-    background: #3aafa9;
+    background-color: #3aafa9;
     font-family: 'Orelega One', cursive;    
     margin: 0px;
+    
 }
       
 header {
@@ -133,7 +138,7 @@ hr.solid {
 .img-text-wrap {
     float:inline-end;
     margin: 10px;
-    width: 300; 
+    width: 300px; 
     height: auto;
 }
 
@@ -164,3 +169,52 @@ pre code {
     font-size: smaller;
 
   }
+
+  /* Mobile */
+@media only screen and (min-width: 320px) {
+    body {
+        background-color: #08f127;
+    }
+
+    .hp-image-size {
+        width: 250px; 
+        height: auto;
+    }
+
+    .img-text-wrap {
+        width: 250px; 
+        height: auto;
+    }
+}
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    body {
+      background-color: #ec28dc;
+    }
+
+    .hp-image-size {
+        width: 400px; 
+        height: auto;
+    }
+
+    .img-text-wrap {
+        width: 400px; 
+        height: auto;
+    }
+}
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: #3aafa9;
+    }
+
+    .hp-image-size {
+        width: 500px; 
+        height: auto;
+    }
+
+    .img-text-wrap {
+        width: 500px; 
+        height: auto;
+    }
+}
