@@ -1,0 +1,12 @@
+<code>wget krisjwood.github.io/cv.pdf </code>
+
+<code id="copy-value">wget krisjwood.github.io/cv.pdf</code><span onclick="copy()"><i class="fas fa-copy"></i></span>
+
+
+<script>
+    function copy() {
+      let value = document.getElementById("copy-value").innerHTML;
+      navigator.clipboard.writeText(value);
+      document.getElementById("copy-value").innerHTML = 'Copied!'
+    }
+    </script>
