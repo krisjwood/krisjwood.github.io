@@ -5,11 +5,15 @@
 <style>
 * {
   box-sizing: border-box;
+	scroll-behavior: smooth;
+    
 }
 
 body {
-  background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    background-color: #f17a7e;
+    font-family: Helvetica, sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -24,7 +28,7 @@ body {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: black;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -37,6 +41,8 @@ body {
   position: relative;
   background-color: inherit;
   width: 50%;
+  scroll-snap-align: start;
+
 }
 
 /* The circles on the timeline */
@@ -47,7 +53,7 @@ body {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #FF9F55;
+  border: 4px solid black;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -175,6 +181,12 @@ body {
     <div class="content">
       <h2>2007</h2>
       <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1986</h2>
+      <p>Born.</p>
     </div>
   </div>
 </div>

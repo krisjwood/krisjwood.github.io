@@ -1,12 +1,48 @@
-<code>wget krisjwood.github.io/cv.pdf </code>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/2c80a5968b.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+<nav>
+  <ul>
+    <span class="left-nav">
+      <li><a id="logo" href="/">kriswood.dev</a></li>
+      <li><a href="me.html">me</a></li>
+      <li><a href="work.html">work</a></li>
+    </span>
+    <span class="right-nav">
+      <li><a style="color: white;" href="cv.html">CV</a></li>
+      <li><a href="https://www.linkedin.com/in/krisjwood/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/krisjwood" target="_blank"><i class="fa-brands fa-github-square"></i></a></li>  
+      <li><a href="mailto: kriswd0@gmail.com"><i class="fa fa-envelope"></i></a></li>
+    </span>
+  </ul>
 
-<code id="copy-value">wget krisjwood.github.io/cv.pdf</code><span onclick="copy()"><i class="fas fa-copy"></i></span>
+</nav>
+<body>
+  <div class="container">
+<section class="s-cv">
+    <div style="align-items: center;" class="box">
+        <code onclick="copy()" id="copy-value">wget krisjwood.github.io/kris_wood_cv.pdf</code>
+        <!-- <span onclick="copy()"><i class="fas fa-copy"></i></span> -->
+        <p>or</p>
+        <a href="https://www.kriswood.dev/kris_wood_cv.pdf"><button>Download</button></a>
+    </div>
+</section>
+</div>
+</body>
+</html>
+
 
 
 <script>
     function copy() {
-      let value = document.getElementById("copy-value").innerHTML;
-      navigator.clipboard.writeText(value);
-      document.getElementById("copy-value").innerHTML = 'Copied!'
+      navigator.clipboard.writeText(document.getElementById("copy-value").innerHTML);
+      document.getElementById("copy-value").innerHTML = 'Copied to clipboard!'
     }
     </script>

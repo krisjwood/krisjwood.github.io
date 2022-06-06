@@ -6,6 +6,8 @@
 	font-family: monospace;
 	scroll-behavior: smooth;
 	/* font-size: xx-large; */
+	/* animation-name: appear; */
+	/* animation-duration: 3s; */
 }
 
 #logo {
@@ -61,23 +63,36 @@ li a:hover {
 	margin-right: 10px;
 }
 
+a button:hover {
+	cursor: pointer;
+}
+
 .container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
-	animation-name: appear;
-	animation-duration: 3s;
-
 }
 
 section {
     height: 100vh;
     width: auto;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    /* transition: 2s; */
 	scroll-snap-align: start;
+}
+
+.fa-heart:active {
+	font-size: smaller;
+}
+
+.fa-heart:hover {
+	color: red;
+	cursor: pointer;
+}
+
+p a {
+	color: blue;
 }
 
 
@@ -85,11 +100,12 @@ section {
 	/* scroll-snap-align: start; */
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: start;
 	width: 80%;
-	padding: 10%;
-	margin: 10%;
+	/* padding: 10%; */
+	/* margin: 10%; */
 	/* background-color: pink; */
+	max-width: 600px;
 
 }
 
@@ -111,20 +127,50 @@ a i:visited {
 }
 
 .s1 {
-    background-color: #4056a1;
+	background-color: #f9a66c;
 }
 
 .s2 {
-    background-color: #f13c20;
+	background-color: #4a6163;
 }
 
 .s3 {
-    background-color: #d79922;
+    background-color: #ffc94b;
+}
+
+.s-cv {
+	background-color: #f17a7e;
+
 }
 
 .s4 {
 	background-color: rgb(234, 122, 226);
 }
+
+.footer-section {
+	/* background: none; */
+	bottom: 0;
+	/* position: fixed; */
+	/* overflow: hidden; */
+	height: auto;
+}
+
+.footer-section * {
+	
+	margin: 5px;
+}
+/* 
+.footer {
+	margin-left: 10px;
+
+} */
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+  }
 
 /* .load {
 	animation-name: load;
@@ -144,20 +190,25 @@ code {
 	background: black;
 	color: white;
 	padding: 5px;
+	box-shadow: 5px 5px #888888;
+	cursor: pointer;
 }
+
+
 
 .fa-copy {
-	font-size: 20px;
+	font-size: 18px;
 	padding: 3px;
+	padding-top: 4px;
 }
 
-.fa-copy:hover {
-	cursor: pointer;
-	color: white;
+code:hover {
+	color: black;
+	background: pink;
 }
 
 .fa-copy:active {
-	font-size: 18px;
+	font-size: 16px;
 	cursor: pointer;
 	color: white;
 }
@@ -165,14 +216,19 @@ code {
 
 .blink {
 	padding:70px;
-	animation: blinker 3s linear infinite;
+	animation: blinker 3s linear ;
 	font-size: 40px;
+	color: black;
+	opacity: 0;
   }
   
   @keyframes blinker {
-	50% {
-	  opacity: 0;
-	}
+	0% {opacity: 1}
+	20% {opacity: 0}
+	40% {opacity: 1}
+	60% {opacity: 0}
+	80% {opacity: 1}
+	100% {opacity: 0}
   }
 
   @keyframes appear {
@@ -193,29 +249,30 @@ code {
 
 ::-webkit-scrollbar:hover {
 	width: 10px;
-	background: black;
 }
 
-::-webkit-scrollbar-track {
-	  /* background: darkgrey; */
-	  color: red;
+/* ::-webkit-scrollbar-track {
+	  background: darkgrey;
+} */
+
+::-webkit-scrollbar-track:hover {
+	color: red;
 } 
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
 	background: black; 
-	/* border: 1px black; */
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: white; 
+	background: darkgrey; 
   }
 
 @media only screen and (max-width: 650px) {
 	.box {
+		max-width: 400px;
 		/* display: flex; */
-		margin-top: 200px;
+		/* margin-top: 200px; */
+		/* min-width: 200px; */
 	}
 
 	ul {
@@ -255,11 +312,12 @@ code {
 		flex-direction: column;
 		align-items: center;
 		/* width: 80%; */
-		height: 70%;
+		/* height: 70%; */
 		/* padding: 10%; */
 		/* margin: 10%; */
 		/* background-color: red; */
 		/* font-size:10%; */
+		max-width: 600px;
 	
 	}
 }
