@@ -6,12 +6,18 @@
 	font-family: monospace;
 	scroll-behavior: smooth;
 	/* font-size: xx-large; */
-	/* animation-name: appear; */
-	/* animation-duration: 3s; */
+	
 }
 
 #logo {
 	font-weight:lighter
+}
+
+html {
+	animation-name: appear;
+	animation-duration: 1s;
+	animation: normal;
+
 }
 
 
@@ -79,7 +85,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-	scroll-snap-align: start;
+	scroll-snap-align:end;
+
 }
 
 .fa-heart:active {
@@ -130,11 +137,11 @@ a i:visited {
 	background-color: #f9a66c;
 }
 
-.s2 {
+.s3 {
 	background-color: #4a6163;
 }
 
-.s3 {
+.s2 {
     background-color: #ffc94b;
 }
 
@@ -142,6 +149,11 @@ a i:visited {
 	background-color: #f17a7e;
 
 }
+
+/* .copy-text {
+	font-size: small;
+	padding: 5px;
+} */
 
 .s4 {
 	background-color: rgb(234, 122, 226);
@@ -189,9 +201,16 @@ ul {
 code {
 	background: black;
 	color: white;
-	padding: 5px;
-	box-shadow: 5px 5px #888888;
+	padding: 8px;
+	box-shadow: 3px 3px #888888;
 	cursor: pointer;
+	border-radius: 5px;
+}
+
+code a {
+	color: white;
+	/* background: none; */
+	text-decoration: none;
 }
 
 
@@ -202,7 +221,7 @@ code {
 	padding-top: 4px;
 }
 
-code:hover {
+code:hover, code a:hover {
 	color: black;
 	background: pink;
 }
@@ -214,7 +233,7 @@ code:hover {
 }
 
 
-.blink {
+/* .blink {
 	padding:70px;
 	animation: blinker 3s linear ;
 	font-size: 40px;
@@ -229,14 +248,14 @@ code:hover {
 	60% {opacity: 0}
 	80% {opacity: 1}
 	100% {opacity: 0}
-  }
+  } */
 
   @keyframes appear {
 	0% {
-	  overflow: hidden;
+	  opacity: 0;
 	}
 	100% {
-		overflow: visible;
+		opacity: 1;
 	}
   }
 
@@ -298,9 +317,10 @@ code:hover {
 		justify-content:center;
 	}
 
-	section {
-		top: 500px
-	}
+	/* section {
+		top: 500px;
+		animation: appear 3s;
+	} */
 	
 	.left-nav li a {
 		padding: 0;
