@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,63 +8,55 @@
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/2c80a5968b.js" crossorigin="anonymous"></script>
     <title>kriswood.dev</title>
-</head>
-<nav>
-  <ul>
-    <span class="left-nav">
-      <li><a id="logo" style="color: white;" href="/">kriswood.dev</a></li>
-      <li><a href="me.html">me</a></li>
-      <li><a href="work.html" active>work</a></li>
-    </span>
-    <span class="right-nav">
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="https://www.linkedin.com/in/krisjwood/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-      <li><a href="https://github.com/krisjwood" target="_blank"><i class="fa-brands fa-github-square"></i></a></li>  
-      <li><a href="mailto: kriswd0@gmail.com"><i class="fa fa-envelope"></i></a></li>
-    </span>
-  </ul>
+  </head>
+  <body>
+    <div class="navbar">
+      <span class="nav-logo">
+        <a style="color: white;" href="/">kriswood.dev</a>
+      </span>
+      <span class="nav-pages">
+        <a href="me.html">me</a>
+        <a href="work.html">work</a>
+      </span>
+      <span class="nav-comms">
+        <a href="https://www.linkedin.com/in/krisjwood/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/krisjwood" target="_blank"><i class="fa-brands fa-github-square"></i></a>  
+        <a href="mailto: kriswd0@gmail.com"><i class="fa fa-envelope"></i></a>
+      </span>
+    </div>
+    <div class="section landing">
+      <div class="container">
+        <h1>Hello, I'm Kris</h1>
+        <p>I'm a full stack software dev and this is my site.</p>
+      </div>
+    </div>
+    <div class="section me">
+      <div class="container">
+        <h1>Who I am</h1>
+        <p>I like lots of things but here is a top ten</p>
+        <p><a href="me.html"><button autofocus><i class="fa-solid fa-user"></i>10 things about me</button></a></p>
 
-</nav>
-<body>
-  <div class="container">
-    <a name="1"></a>
-    <section class="s1">
-      <div class="box"> 
-        <h1 class="load">Hello, I'm Kris :)</h1>
-
-
-        <p>I'm a full stack software dev. There's a bit about me and my work here.</p>
-       <!-- <i class="fa-solid fa-face-sunglasses"></i> -->
-        <!-- <a href="#me"><i class="fa-solid fa-angles-down"></i></a> -->
-        
-      </div>          
-    </section>
-    <a name="me"></a>
-    <section class="s2">
-      <div class="box"> 
-        <h1>Me</h1>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-        <p><a href="me.html">10 things about me</a></p>
-        <!-- <a href="#work"><i class="fa-solid fa-angles-down blink"></i></a> -->
-      </div>  
-    </section>
-    <a name="work"></a>
-    <section class="s3">
-      <div class="box"> 
-          <h1>work</h1>
-          <p>I'm a full stack web dev. I use to be a baker, and before that I worked in the thirs sector. And before than I ran and later sold a food business.</p>
-          <p><a href="work.html">My work</a></p>
-          <!-- <p>But  I'm a full   stack web dev now.</p> -->
-      </div>  
-        </section>
-        <section class="footer-section">
-          <i class="fa-solid fa-heart"></i>
-          <p class="footer">Made with vanilla HTML, CSS & JS.</p>
-        </section>
-          
-  </div>
-
-
-</body>
+      </div>
+    </div>
+    <div class="section work">
+      <div class="container">
+        <h1>What i've done</h1>
+        <p>click to copy command</p>
+      <code id="wget-snippet" onclick="copy()"><span class="wget">wget</span> krisjwood.github.io/kris_wood_cv.pdf</code>
+        <p>or click to download</p>
+        <a href="https://www.kriswood.dev/kris_wood_cv.pdf"><button autofocus><i class="fa-solid fa-cloud-arrow-down"></i> Download CV</button></a>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <span>Made with <i class="fa-solid fa-heart"></i> and some vanilla HTML, CSS & JS.</span>
+    </div>
+  </body>
 </html>
+
+<script>
+  function copy() {
+    navigator.clipboard.writeText("wget krisjwood.github.io/kris_wood_cv.pdf");
+    document.getElementById("wget-snippet").innerHTML = 'Copied to clipboard!'
+  }
+</script>
 
