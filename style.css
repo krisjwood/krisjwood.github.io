@@ -8,6 +8,7 @@ html {
   -ms-animation: fadein 1s; /* Internet Explorer */
   -o-animation: fadein 1s; /* Opera < 12.1 */
   animation: fadein 1s;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
   color: black;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 5vh;
+  font-size: 4vh;
 }
 
 .navbar a:hover {
@@ -49,7 +50,7 @@ body {
   display: flex;
   justify-content: center;
   min-width: 200px;
-  scroll-snap-align: end;
+  scroll-snap-align: start;
 }
 
 .container {
