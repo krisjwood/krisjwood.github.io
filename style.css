@@ -53,10 +53,18 @@ body {
   scroll-snap-align: start;
 }
 
+.page {
+  padding: 5vh;
+  display: flex;
+  justify-content: center;
+  min-width: 200px;
+}
+
 .container {
-  margin: 20vh 10vw;
+  margin: 10vh 10vw 5vh 10vw;
   max-width: 800px;
   padding: 20px;
+  width: 70vw;
 }
 
 .landing {
@@ -67,6 +75,26 @@ body {
 }
 .work {
   background: #f17a7e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 6vh;
+}
+
+h2 {
+  font-size: 5vh;
+}
+
+h3 {
+  font-size: 4vh;
+}
+
+p {
+  font-size: 2vh;
 }
 
 /* FOOTER */
@@ -179,4 +207,18 @@ code {
 @-o-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+
+/* dev mode */
+
+/* div {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid
+} */
+
+.container h1, h2 {
+  text-align: center;
+  font-weight: bolder;
 }
