@@ -27,32 +27,81 @@
     </div>
     <div class="page landing">
       <div class="container">
-        <h1>My code</h1>
-        <h2>Some of the things I've done with my coding superpowers.</h2>
+        <h1>code</h1>
+        <!-- <h2>Some of the things I've done with my coding superpowers.</h2> -->
         <div class="card">
-          <h3>Python TicTakToe</h3>
-          <p>An early project, learning the basics of Python in the terminal.</p>
-          <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@Cainekjayw/Tic-Tac-Toe?v=1&embed=true&lite=true"></iframe>
+          <h3>Python TicTacToe</h3>
+          <p>Learning the basics of Python in the terminal.</p>
+          <span class="desktop">
+              <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@Cainekjayw/Tic-Tac-Toe?v=1&embed=true&lite=true"></iframe>
+          </span>
+          <span class="card-btn-wrapper">
+            <div class="card-btns">
+                <a href="https://github.com/krisjwood/tic-tac-toe"><button><i class="fa-solid fa-code"></i>checkout code</button></a>
+            </div>
+            <div class="card-btns mobile">
+                <a href="https://replit.com/@Cainekjayw/Tic-Tac-Toe"><button><i class="fa-solid fa-play"></i>replit</button></a>
+            </div>
+          </span>
         </div>
-        
         <div class="card">
             <h3>Python Rock Paper Scissors</h3>
-            <p>Another early project, learning the basics of Python in the terminal.</p>
-            <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@Cainekjayw/Rock-Paper-Scissors?v=1&embed=true&lite=true"></iframe>
+            <p>Learning the basics of Python in the terminal.</p>
+            <span class="desktop">
+                <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@Cainekjayw/Rock-Paper-Scissors?v=1&embed=true&lite=true"></iframe>
+            </span>
+            <span class="card-btn-wrapper">
+              <div class="card-btns">
+                  <a href="https://github.com/krisjwood/rock_paper_scissors"><button><i class="fa-solid fa-code"></i>checkout code</button></a>
+              </div>
+              <div class="card-btns mobile">
+                  <a href="https://replit.com/@Cainekjayw/Rock-Paper-Scissors"><button><i class="fa-solid fa-play"></i>replit</button></a>
+              </div>
+            </span>
         </div>
 
         <div class="card">
           <h3>Type 1 Diabetes Dashboard</h3>
-          <p></p>
-          <div>
-              <iframe width="100%" height="300px" src="https://www.youtube.com/embed/uqTjkKj0mFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+          <p>Consuming data generated from a medical device, this web app built in Python and Flask aggregates data into meaningful insights.</p>
+          <div class="desktop">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/uqTjkKj0mFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
+          <span class="card-btn-wrapper">
+            <div class="card-btns">
+                <a href="https://github.com/krisjwood/type-1-diabetes-dashboard"><button><i class="fa-solid fa-code"></i>checkout code</button></a>
+            </div>
+            <div class="card-btns mobile">
+                <a href="https://www.youtube.com/watch?v=uqTjkKj0mFY"><button><i class="fa-brands fa-youtube"></i>watch demo</button></a>
+            </div>
+          </span>
         </div>
 
         <div class="card">
-          <h3>Heading2</h3>
-          <p>Bla bla</p>
+          <h3>AWS Shopping List</h3>
+          <p>coming soon...</p>
+          <span class="card-btn-wrapper">
+            <div class="card-btns">
+                <a href="https://github.com/krisjwood/aws-shopping-list"><button><i class="fa-solid fa-code"></i>checkout code</button></a>
+            </div>
+          </span>
+        </div>
+        <div class="card">
+          <h3>React Notes App</h3>
+          <p>coming soon...</p>
+          <span class="card-btn-wrapper">
+            <div class="card-btns">
+                <a href="https://github.com/krisjwood/react-notes-app"><button><i class="fa-solid fa-code"></i>checkout code</button></a>
+            </div>
+          </span>
+        </div>
+        <div class="card">
+          <h3>getFood</h3>
+          <p>coming soon...</p>
+          <span class="card-btn-wrapper">
+            <div class="card-btns">
+                <a href="https://github.com/krisjwood/getFood-"><button><i class="fa-solid fa-code"></i>checkout code</button></a>
+            </div>
+          </span
         </div>
     </div>
   </div>
@@ -68,7 +117,6 @@
     background-color: white;
     box-shadow: 5px 5px 20px black;
     transition: 0.3s;
-    min-height: 400px;
     border-radius: 5px;
     margin-bottom: 30px;
   }
@@ -76,4 +124,29 @@
   .card:hover {
     box-shadow: 5px 5px 8px black;
   }
+
+  /* RESPONSIVE */
+@media only screen and (max-width: 650px) {
+
+    .page {
+    display: flex;
+    justify-content: center;
+    }
+
+    .container {
+    margin: 10vh 10vw 5vh 10vw;
+    display: block;
+    }
+
+    .card-btn-wrapper {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .card-btns {
+  padding-bottom: 5px;
+
+}
+}
 </style>

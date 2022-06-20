@@ -28,7 +28,7 @@ body {
   color: black;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 4vh;
+  font-size: 5vh;
 }
 
 .navbar a:hover {
@@ -45,7 +45,7 @@ body {
 
 /* BODY */
 .section {
-  padding: 5vh;
+  /* padding: 5vh; */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -54,17 +54,49 @@ body {
 }
 
 .page {
-  padding: 5vh;
+  /* padding: 5vh; */
   display: flex;
   justify-content: center;
-  min-width: 200px;
+  /* min-width: 200px; */
+  min-height: 100vh;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
 }
 
 .container {
   margin: 10vh 10vw 5vh 10vw;
-  max-width: 800px;
   padding: 20px;
-  width: 70vw;
+}
+
+.card-btns a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.card-btns a button {
+  background: black;
+}
+
+.card-btns i {
+  padding-right: 5px;
+}
+
+.card-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.card-btns {
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 
 .landing {
@@ -113,9 +145,7 @@ p {
 
 button {
   background-color: #f8f9fa;
-  border: 1px solid #f8f9fa;
   border-radius: 4px;
-  color: #3c4043;
   cursor: pointer;
   font-family: arial,sans-serif;
   font-size: 14px;
@@ -123,16 +153,29 @@ button {
   min-width: 54px;
   padding: 8px;
   text-align: center;
+  box-shadow: rgba(10, 10, 10, .5) 0 3px 3px;
+  color: black;
 }
 
 button:hover {
-  border-color: #dadce0;
   box-shadow: rgba(10, 10, 10, .5) 0 3px 3px;
-  color: #09090a;
+  color: white;
+  background-color: black;
+}
+
+.card-btns a button:hover {
+  box-shadow: rgba(10, 10, 10, .5) 0 3px 3px;
+  color: black;
+  background-color: white;
+}
+
+.card-btns a button {
+  box-shadow: rgba(10, 10, 10, .5) 0 3px 3px;
+  color: white;
 }
 
 button:focus {
-  border-color: #4285f4;
+  /* border-color: #4285f4; */
   outline: none;
 }
 
@@ -176,6 +219,14 @@ code {
 
   .section {
     padding: 0;
+  }
+
+  .desktop {
+    display: none;
+  }
+  
+  .mobile {
+    display: block;
   }
 }
 
@@ -221,4 +272,8 @@ code {
 .container h1, h2 {
   text-align: center;
   font-weight: bolder;
+}
+
+.landing-text {
+  font-size: 5vh;
 }
