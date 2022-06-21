@@ -20,18 +20,19 @@
         <a href="code.html">code</a>
       </span>
       <span class="nav-comms">
+        <a onclick="setBackgroundColor()"><i class="fa-solid fa-palette"></i></a>
         <a href="https://www.linkedin.com/in/krisjwood/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/krisjwood" target="_blank"><i class="fa-brands fa-github-square"></i></a>  
         <a href="mailto: kriswd0@gmail.com"><i class="fa fa-envelope"></i></a>
       </span>
     </div>
-    <div class="section landing">
+    <div class="section">
       <div class="container">
-        <h1>Hello, I'm Kris and I'm a full stack web developer.</h1>
+        <h1>Hello, I'm Kris and I'm a full stack web developer. I've worked with JavaScript SPAs, Node with AWS, HTML and CSS. I know a bit of Python too. I got my AWS Cloud Practioner certification in 2021.</h1>
         <!-- <p>I'm a full stack software dev and this is my site.</p> -->
       </div>
     </div>
-    <div class="section me">
+    <div class="section">
       <div class="container">
         <!-- <h1>Who I am</h1> -->
         <!-- <p>I like lots of things but here is a top ten</p> -->
@@ -39,7 +40,7 @@
         <h2>When not on the 'keys', I love hanging with my fam, surfing, baking and ...</h2>
       </div>
     </div>
-    <div class="section work">
+    <div class="section">
       <div class="container">
         <!-- <h1></h1> -->
         <h2>I've ran my own business, worked in the third sector in corporate fundraising and trained as an artisan baker.</h2>
@@ -56,5 +57,17 @@
     navigator.clipboard.writeText("wget krisjwood.github.io/kris_wood_cv.pdf");
     document.getElementById("wget-snippet").innerHTML = 'Copied to clipboard!'
   }
+  
+  function setBackgroundColor() {
+    const sections = document.querySelectorAll('.section');
+
+    sections.forEach(section => {
+      const randomColor = Math.floor(Math.random()*16777215).toString(16);
+      section.style.backgroundColor = "#" + randomColor;
+    });
+}
+
+// genNew.addEventListener("click", setBackgroundColor);
+setBackgroundColor();
 </script>
 
