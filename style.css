@@ -212,7 +212,12 @@ code {
 }
 
 /* RESPONSIVE */
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 260px) {
+  html {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 800px) {
   .navbar {
     display: flex;
     flex-direction: column;
@@ -224,7 +229,11 @@ code {
   }
 
   .nav-logo a {
-    font-size: 10vw;
+    font-size: 6vh;
+  }
+
+  .nav-pages a {
+    font-size: 4vh;
   }
 
   .container {
