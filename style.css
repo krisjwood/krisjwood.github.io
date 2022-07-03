@@ -217,7 +217,7 @@ code {
     visibility: hidden;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   .navbar {
     display: flex;
     flex-direction: column;
