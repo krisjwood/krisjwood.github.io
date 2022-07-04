@@ -24,6 +24,8 @@ body {
   padding: 10px 0px;
  }
 
+.navbar a::after, 
+.navbar a::before, 
 .navbar a {
   color: black;
   padding: 14px 16px;
@@ -43,11 +45,13 @@ body {
 	float: right;
 }
 
+.palette::after,
 .palette {
   position: fixed;
   bottom: 4%;
-  left: 4%;
-  font-size: 50px;
+  left: 2vw;
+  font-size: 5vh;
+  color: black;
 }
 
 .palette:hover {
@@ -73,7 +77,8 @@ body {
 }
 
 .desktop {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .mobile {
@@ -149,13 +154,27 @@ p {
   /* scroll-snap-align: end; */
 }
 
+bitcoin-link::after,
+.bitcoin-link::before,
+.bitcoin-link {
+  color: inherit;
+}
+
 /* MINOR */
 .fa-heart {
+  position: relative;
   color: red;
+  cursor:grab;
+}
+
+.fa-heart:hover {
+  color: darkred;
+  font-size: larger;
 }
 
 .fa-palette:hover {
   cursor: pointer;
+  color: white;
 }
 
 button {
@@ -211,13 +230,35 @@ code {
   color: black;
 }
 
+/* SNACK BAR */
+#snackbar {
+  visibility: hidden; 
+  min-width: 250px;
+  margin-left: -125px; 
+  background-color: #333; 
+  color: #fff; 
+  text-align: center; 
+  border-radius: 2px; 
+  padding: 16px; 
+  position: fixed; 
+  z-index: 1; 
+  left: 50%;
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
 /* RESPONSIVE */
 @media only screen and (max-width: 260px) {
   html {
     visibility: hidden;
   }
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 850px) {
   .navbar {
     display: flex;
     flex-direction: column;
@@ -282,6 +323,17 @@ code {
 @-o-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+
+@-webkit-keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 

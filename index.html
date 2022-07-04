@@ -31,61 +31,56 @@
     </div>
     <div class="section">
       <div class="container">
-        <h2>I passed the AWS Cloud Practitioner certification in 2021.</h2>
+        <h2>Hello, I'm a software dev and this is my shop window.</h2>
       </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <h2>I summited Kilimanjaro in 2014 and our team raised £120k for charity.</h2>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <h2>I founded my first business at 17 that organised a fashion show for 500 attendees.</h2>
-        </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <h2>Favourite thing to do is make pancakes with my family on a weekend.</h2>
-        </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <h2>I love surfing but ain't that good considering how often I go.</h2>
-        </div>
     </div>
     <div class="section">
       <div class="container">
         <h2>If you offer me ice cream, I'll only accept chocolate.</h2>
-        </div>
+      </div>
     </div>
     <div class="section">
       <div class="container">
-        <h2>My favourite band is the Lumineers…or maybe the Arctic Monkeys… or is it, Kings of Leon, actually?</h2>
+        <h2>I summited Kilimanjaro in 2014 and our team raised £120k for charity. 
+          <a class="bitcoin-link" target="_blank" href="https://www.xe.com/currencyconverter/convert/?Amount=120000&From=GBP&To=BTC">How much is that in <i class="fa-solid fa-bitcoin-sign"></i>?</a>
+          </h2>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h2>I passed the AWS Cloud Practitioner certification in 2021.</h2>
+
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <!-- <h2>Favourite thing to do is make pancakes with my family on a weekend.</h2> -->
+        <h2>I love surfing but ain't that good considering how often I go.</h2>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h2>I founded a couple businesses (and sold one) since college days.</h2>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h2>Making bread is my meditation.Blows my mind how 4 ingredients make such awesomeness.</h2>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <h2>Arctic Monkeys has to be my favourite band.</h2>
         </div>
     </div>
     <div class="footer-wrapper">
-      <span>Made with <i class="fa-solid fa-heart"></i> and some vanilla HTML, CSS & JS.</span>
+      <span>Made with <i class="fa-solid fa-heart heart"></i> and some vanilla HTML, CSS & JS.</span>
     </div>
+    <div id="snackbar"><i onclick="love()" class="fa-solid fa-heart"></i> you too x</div>
   </body>
 </html>
 
 <script>
-  function copy() {
-    navigator.clipboard.writeText("wget krisjwood.github.io/kris_wood_cv.pdf");
-    document.getElementById("wget-snippet").innerHTML = 'Copied to clipboard!'
-  }
-  
-  function setBackgroundColor() {
-    const sections = document.querySelectorAll('.section');
-
-    sections.forEach(section => {
-      const randomColor = Math.floor(Math.random()*16777215).toString(16);
-      section.style.backgroundColor = "#" + randomColor;
-    });
-}
-
-// genNew.addEventListener("click", setBackgroundColor);
 setBackgroundColor();
 </script>
 
