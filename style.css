@@ -145,6 +145,15 @@ p {
   font-size: 2vh;
 }
 
+.container p {
+  font-size: larger;
+  text-align: center;
+}
+
+.container p a {
+  text-decoration: underline;
+}
+
 /* FOOTER */
 .footer-wrapper {
   height: auto;
@@ -246,6 +255,57 @@ code {
   bottom: 30px;
 }
 
+/* BITCOIN MODAL */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body {
+  display: block;
+  text-align: center;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  align-self: flex-end;
+  margin-top: -10px;
+}
+
+.close:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
 #snackbar.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -345,7 +405,7 @@ code {
   border-style: solid
 } */
 
-.container h1, h2 {
+.container h1, h2, h4 {
   text-align: center;
   font-weight: bolder;
 }
