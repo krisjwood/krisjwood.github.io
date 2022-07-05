@@ -19,7 +19,7 @@
         <a style="color: white;" href="/">kriswood.dev</a>
       </span>
       <span class="nav-pages">
-        <a href="me.html">me</a>
+        <!-- <a href="me.html">me</a> -->
         <a href="work.html">work</a>
         <a href="code.html">code</a>
       </span>
@@ -31,25 +31,29 @@
     </div>
     <div class="section">
       <div class="container">
-        <h2>Hello, I'm a software dev and this is my shop window.</h2>
+        <h2>Hello, I'm a full stack web dev.</h2>
+        <p>Scroll for more fascinating facts...</p>
       </div>
     </div>
     <div class="section">
       <div class="container">
         <h2>If you offer me ice cream, I'll only accept chocolate.</h2>
+        <p>Specifically, <a href="http://www.drfeelgood.co.nz/">Dr Feelgood Chocoholic, Cacao & Cream</a></p>
       </div>
     </div>
     <div class="section">
       <div class="container">
-        <h2>I summited Kilimanjaro in 2014 and our team raised £120k for charity. 
-          <a class="bitcoin-link" target="_blank" href="https://www.xe.com/currencyconverter/convert/?Amount=120000&From=GBP&To=BTC">How much is that in <i class="fa-solid fa-bitcoin-sign"></i>?</a>
+        <h2>I summited Mount Kilimanjaro in 2014 and our team raised £120k for charity. 
           </h2>
+          <p>
+          <a class="bitcoin-link" target="_blank" onclick="openBitcoinModal()">What's that in &#x20BF;itcoin?</a>
+          </p>
       </div>
     </div>
     <div class="section">
       <div class="container">
-        <h2>I passed the AWS Cloud Practitioner certification in 2021.</h2>
-
+        <h2>I am a certified AWS Cloud Practitioner and keen to learn more about cloud architecture</h2>
+        <h2><i class="fa-brands fa-aws"></i></h2>
       </div>
     </div>
     <div class="section">
@@ -60,27 +64,45 @@
     </div>
     <div class="section">
       <div class="container">
-        <h2>I founded a couple businesses (and sold one) since college days.</h2>
+        <h2>I founded a business that employed dozens and was a market leader.</h2>
       </div>
     </div>
     <div class="section">
       <div class="container">
-        <h2>Making bread is my meditation.Blows my mind how 4 ingredients make such awesomeness.</h2>
+        <h2>Making bread is my meditation. Blows my mind how 4 ingredients make such awesomeness.</h2>
+        <h2><i class="fa-solid fa-bread-slice"></i></h2>
       </div>
     </div>
-    <div class="section">
+    <!-- <div class="section">
       <div class="container">
         <h2>Arctic Monkeys has to be my favourite band.</h2>
         </div>
-    </div>
+    </div> -->
     <div class="footer-wrapper">
       <span>Made with <i class="fa-solid fa-heart heart"></i> and some vanilla HTML, CSS & JS.</span>
     </div>
     <div id="snackbar"><i onclick="love()" class="fa-solid fa-heart"></i> you too x</div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="close" onclick="closeBitcoinModal()">&times;</div>
+        <div class="modal-body">
+          <h1 id="modalFX"></h1>
+          <p id="modalFXtime"></p>
+          <p style="font-size: smaller;">coinapi.io API</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
 <script>
 setBackgroundColor();
+getBitcoinPrice();
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById("myModal")) {
+    document.getElementById("myModal").style.display = "none";
+  }
+}
 </script>
 
