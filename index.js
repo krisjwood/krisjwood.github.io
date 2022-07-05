@@ -21,11 +21,11 @@ function love() {
     }, 2000);
 }
 
-async function getBitcoinPrice() {
-    fetch("https://rest.coinapi.io/v1/exchangerate/GBP/BTC", {
+function getBitcoinPrice() {
+    fetch("https://rest.coinapi.io/v1/exchangerate/NZD/BTC", {
         method: "GET",
         headers: {
-            "X-CoinAPI-Key": "31CDDF2F-330D-4697-A350-779B920463D0"
+            "X-CoinAPI-Key": "C815EFA4-F4FE-405D-9CBA-AD62AFC34009"
         }
     })
     .then(response => response.json())
@@ -37,8 +37,8 @@ async function getBitcoinPrice() {
 
 function openBitcoinModal() {
     document.getElementById("myModal").style.display = "block";
-    document.getElementById("modalFX").innerHTML = `£120k = &#x20BF;${(bitcoinJSON.rate * 120000).toFixed(2)}` ;
-    document.getElementById("modalFXtime").innerHTML = `${Date(bitcoinJSON.time)}` ;
+    document.getElementById("modalFX").innerHTML = `NZ$230k = &#x20BF;${(bitcoinJSON.rate * 230000).toFixed(2)}` ;
+    document.getElementById("modalFXtime").innerHTML = `${Date(bitcoinJSON.time)} <br> (NZ$1 = &#x20BF;${bitcoinJSON.rate})` ;
     
 }
 

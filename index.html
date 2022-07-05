@@ -13,6 +13,9 @@
     <title>kriswood.dev</title>
   </head>
   <body>
+    <div class="too-small">
+        <i style="color: #bf6952; font-size: larger;" class="fa-solid fa-poo"></i>
+    </div>
     <a onclick="setBackgroundColor()"><i class="fa-solid fa-palette palette"></i></a>
     <div class="navbar">
       <span class="nav-logo">
@@ -29,45 +32,48 @@
         <a href="mailto: kriswd0@gmail.com"><i class="fa fa-envelope"></i></a>
       </span>
     </div>
-    <div class="section">
+    <div class="section" style="background-color: rgb(31, 151, 208);">
       <div class="container">
         <h2>Hello, I'm a full stack web dev.</h2>
         <p>Scroll for more fascinating facts...</p>
+        <br>
+        
+        <p>...and try spot the easter <a target="_blank" style="color: black;" href="https://edfries.wordpress.com/2017/03/22/chasing-the-first-arcade-easter-egg/"><i class="fa-solid fa-egg"></i></a>'s</p>
       </div>
     </div>
-    <div class="section">
+    <div class="section" style="background-color: rgb(216, 160, 92);">
       <div class="container">
         <h2>If you offer me ice cream, I'll only accept chocolate.</h2>
-        <p>Specifically, <a href="http://www.drfeelgood.co.nz/">Dr Feelgood Chocoholic, Cacao & Cream</a></p>
+        <p>Specifically, <a target="_blank" href="http://www.drfeelgood.co.nz/">Dr Feelgood Chocoholic, Cacao & Cream</a></p>
       </div>
     </div>
-    <div class="section">
+    <div class="section" style="background-color: rgb(131, 75, 223);">
       <div class="container">
-        <h2>I summited Mount Kilimanjaro in 2014 and our team raised £120k for charity. 
+        <h2>I summited Mount Kilimanjaro in 2014 and our team raised NZ$120k for charity. 
           </h2>
           <p>
           <a class="bitcoin-link" target="_blank" onclick="openBitcoinModal()">What's that in &#x20BF;itcoin?</a>
           </p>
       </div>
     </div>
-    <div class="section">
+    <div class="section" style="background-color: rgb(173, 69, 88);">
       <div class="container">
         <h2>I am a certified AWS Cloud Practitioner and keen to learn more about cloud architecture</h2>
         <h2><i class="fa-brands fa-aws"></i></h2>
       </div>
     </div>
-    <div class="section">
+    <div class="section" style="background-color: rgb(67, 162, 35);">
       <div class="container">
         <!-- <h2>Favourite thing to do is make pancakes with my family on a weekend.</h2> -->
         <h2>I love surfing but ain't that good considering how often I go.</h2>
       </div>
     </div>
-    <div class="section">
+    <div class="section" style="background-color: rgb(191, 115, 166);">
       <div class="container">
-        <h2>I founded a business that employed dozens and was a market leader.</h2>
+        <h2>Buy me a beer and I'll tell you about the time I fist bumped Spiderman on a London rooftop at NYE</h2>
       </div>
     </div>
-    <div class="section">
+    <div class="section" style="background-color: rgb(221, 242, 131);">
       <div class="container">
         <h2>Making bread is my meditation. Blows my mind how 4 ingredients make such awesomeness.</h2>
         <h2><i class="fa-solid fa-bread-slice"></i></h2>
@@ -96,7 +102,6 @@
 </html>
 
 <script>
-setBackgroundColor();
 getBitcoinPrice();
 
 window.onclick = function(event) {
