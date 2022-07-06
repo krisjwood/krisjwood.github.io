@@ -32,7 +32,7 @@ function getBitcoinPrice() {
     .then(json => {
         bitcoinJSON = json
     })
-    .catch(err => console.error(err))
+    .catch()
 }
 
 function openBitcoinModal() {

@@ -85,8 +85,20 @@ body {
   display: none;
 }
 
+iframe,
+img {
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.image-responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
 .container {
-  margin: 30vh 10vw 5vh 10vw;
+  margin: 25vh 10vw 5vh 10vw;
   padding: 20px;
 }
 
@@ -113,6 +125,20 @@ body {
 .card-btns {
   padding-bottom: 10px;
   padding-right: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-content {
+  margin: 0px 20px;
 }
 
 .landing {
@@ -147,7 +173,7 @@ p {
 
 .container p {
   font-size: larger;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .container p a {
@@ -382,7 +408,7 @@ a:hover {
   }
 
   .container {
-    margin: 30vh 10vw;
+    margin: 25vh 10vw;
     padding-top: 20px;
   }
 
