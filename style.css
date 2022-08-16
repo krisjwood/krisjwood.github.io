@@ -28,17 +28,29 @@ body {
 .navbar a::before, 
 .navbar a {
   color: black;
-  padding: 14px 16px;
+  padding: 6px 10px;
   text-decoration: none;
   font-size: 5vh;
+  margin: 0px 5px;
 }
 
-.navbar a:hover {
+.nav-pages a {
   color: white;
+  background-color: black;
+  border-radius: 10px;
 }
 
-.nav-logo {
-  font-weight: lighter;
+.navbar .nav-logo a:hover {
+  color: white
+}
+
+.navbar .nav-pages a:hover {
+  color: black;
+  background-color: white;
+}
+
+.navbar .nav-comms a:hover {
+  color: white;
 }
 
 .nav-comms {
@@ -141,13 +153,11 @@ img {
   margin: 0px 20px;
 }
 
-.landing {
+.projects {
   background: #f9a66c;
 }
-.me {
-  background: #4a6163;
-}
-.work {
+
+.cv {
   background: #f17a7e;
 }
 
@@ -169,6 +179,10 @@ h3 {
 
 p {
   font-size: 2vh;
+}
+
+.container p {
+  text-align: center;
 }
 
 .container p {
@@ -403,8 +417,14 @@ a:hover {
     font-size: 6vh;
   }
 
+  .nav-pages {
+    margin-bottom: 10px;
+  }
+
   .nav-pages a {
     font-size: 4vh;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .container {
