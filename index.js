@@ -25,7 +25,7 @@ function getBitcoinPrice() {
     fetch("https://rest.coinapi.io/v1/exchangerate/NZD/BTC", {
         method: "GET",
         headers: {
-            "X-CoinAPI-Key": "C815EFA4-F4FE-405D-9CBA-AD62AFC34009"
+            "X-CoinAPI-Key": "31CDDF2F-330D-4697-A350-779B920463D0"
         }
     })
     .then(response => response.json())
