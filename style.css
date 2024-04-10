@@ -494,3 +494,12 @@ a:hover {
 .landing-text {
   font-size: 5vh;
 }
+
+.aws-badge {
+  border: none;
+}
+
+.centre-container {
+  display: flex;
+  justify-content: center;
+}
